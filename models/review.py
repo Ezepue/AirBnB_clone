@@ -4,9 +4,9 @@ from models.base_model import BaseModel
 
 
 class Review(BaseModel):
-	"""
-	Initializes instances of Review.
-	"""
-	place_id: str = ""
-	user_id: str = ""
-	text: str = ""
+    """
+    Initializes instances of Review.
+    """
+    place_id: str = ""
+    user_id: str = ""
+    text: str = ""

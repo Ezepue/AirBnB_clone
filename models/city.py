@@ -4,9 +4,9 @@
 from models.base_model import BaseModel
 
 class City(BaseModel):
-	"""
-	Initializes city instances
-	"""
-	
-	state_id: str = ""
-	name: str = ""
+    """
+    Initializes city instances
+    """
+    
+    state_id: str = ""
+    name: str = ""

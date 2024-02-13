@@ -4,8 +4,8 @@
 from models.base_model import BaseModel
 
 class Amenity(BaseModel):
-	"""
-	This class Initializes amenity instances
-	"""
-	
-	name: str = ""
+    """
+    This class Initializes amenity instances
+    """
+    
+    name: str = ""

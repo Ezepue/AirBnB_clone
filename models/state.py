@@ -4,7 +4,7 @@
 from models.base_model import BaseModel
 
 class State(BaseModel):
-	"""
-	Initializes instances of State.
-	"""
-	name: str = ""
+    """
+    Initializes instances of State.
+    """
+    name: str = ""
