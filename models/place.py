@@ -1,5 +1,7 @@
 #!/usr/bin/env python3
+
 """Place class Module"""
+
 from models.base_model import BaseModel
 
 
@@ -7,7 +9,7 @@ class Place(BaseModel):
     """
     Initializes instances of Place
     """
-    
+
     city_id: str = ""
     user_id: str = ""
     name: str = ""

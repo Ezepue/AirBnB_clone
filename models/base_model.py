@@ -2,6 +2,7 @@ import uuid
 from datetime import datetime
 import models
 
+
 class BaseModel:
     """
     The base class for all other models
@@ -14,8 +15,10 @@ class BaseModel:
         if kwargs:
             attr = kwargs.copy()
             del attr['__class__']
-            attr['created_at'] = datetime.strptime(attr['created_at'], '%Y-%m-%dT%H:%M:%S.%f')
-            attr['updated_at'] = datetime.strptime(attr['updated_at'], '%Y-%m-%dT%H:%M:%S.%f')
+            attr['created_at'] = datetime.strptime(attr['created_at'],
+                                                   '%Y-%m-%dT%H:%M:%S.%f')
+            attr['updated_at'] = datetime.strptime(attr['updated_at'],
+                                                   '%Y-%m-%dT%H:%M:%S.%f')
 
             for key, value in attr.items():
                 setattr(self, key, value)
@@ -33,7 +36,8 @@ class BaseModel:
 
     def save(self):
         """
-        Updates the public instance attribute 'updated_at' with the current datetime.
+        Updates the public instance attribute 'updated_at'
+        with the current datetime.
         """
         self.updated_at = datetime.today()
         models.storage.save()

@@ -5,6 +5,7 @@ from models import BaseModel
 from models.amenity import Amenity
 import unittest
 
+
 class TestAmenity(unittest.TestCase):
     """Implement unittest for Amenity class"""
 
