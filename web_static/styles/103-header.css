@@ -51,7 +51,7 @@ header {
 	height: 0%;
 	border-radius: 4px;
 	transition: .2s ease-in-out;
-	background-color: aliceblue;
+	background-color: rgb(250, 244, 244);
 }
 /* hide checkbox */
 input {

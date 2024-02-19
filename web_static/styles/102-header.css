@@ -15,7 +15,6 @@ header {
 }
  
 /* rotate burguer */
-
   
 .main_nav_burguer {
 	margin: .6rem 0 0 1rem;
@@ -26,7 +25,6 @@ header {
 	color: lightslategray;
 	transition: .2s ease-in-out;
 }
-  
 .main_nav_burguer:hover {
 	cursor: pointer;
 	transform: rotate(0deg);
@@ -48,7 +46,8 @@ header {
 	height: 0%;
 	border-radius: 4px;
 	transition: .2s ease-in-out;
-	background-color: aliceblue;
+	background-color: rgb(250, 244, 244);
+
 }
 
   
